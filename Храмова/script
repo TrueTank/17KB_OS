@@ -1,0 +1,18 @@
+echo "Выберите действие: "
+echo "1 - user information"
+echo "2 - amount of memory used"
+echo "3 - amount of disk space"
+echo "4 - running process"
+echo "5 - processes started by current user"
+echo "6 - system date and time"
+echo "7 - system startup time"
+echo "8 - exit"
+while [[ "$1" != 8 ]]
+do
+read p
+case $p in
+1) echo $(whoami) ;;
+6) echo $(date -R) ;;
+8) break ;;
+esac
+done
