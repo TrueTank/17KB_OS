@@ -1,4 +1,4 @@
-echo "Выберите действие: "
+echo "Choose the action: "
 echo "1 - user information"
 echo "2 - amount of memory used"
 echo "3 - amount of disk space"
@@ -7,12 +7,16 @@ echo "5 - processes started by current user"
 echo "6 - system date and time"
 echo "7 - system startup time"
 echo "8 - exit"
-while [[ "$1" != 8 ]]
+while [[ $p != 8 ]]
 do
 read p
 case $p in
 1) echo $(whoami) ;;
+2) free ;;
+3) echo $(grep MemTotal /proc/meminfo) ;;
+4) ps ;;
+5) echo $(ps -u) ;;
 6) echo $(date -R) ;;
-8) break ;;
+7) echo $(uptime -s) ;;
 esac
 done
