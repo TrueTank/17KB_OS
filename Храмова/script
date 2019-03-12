@@ -13,9 +13,9 @@ read p
 case $p in
 1) echo $(whoami) ;;
 2) free ;;
-3) echo $(grep MemTotal /proc/meminfo) ;;
+3) df -h ~ ;;
 4) ps ;;
-5) echo $(ps -u) ;;
+5) ps -u ;;
 6) echo $(date -R) ;;
 7) echo $(uptime -s) ;;
 esac
