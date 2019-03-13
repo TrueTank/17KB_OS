@@ -7,3 +7,16 @@ echo "5-Processes running by the current user"
 echo "6-System date and time"
 echo "7-System startup time"
 echo "8-EXIT"
+while [[ $k -ne 8 ]]
+do
+read k
+case $k in
+1) whoami;;
+2) free;;
+3) echo "!111";;
+4) ps;;
+5) echo $(ps -u);;
+6) echo "22";;
+7) echo "ww";;
+esac
+done
