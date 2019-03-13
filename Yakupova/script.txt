@@ -19,7 +19,7 @@ then free -m
 fi
 
 if [ $choice = 3 ]
-then df
+then df -h
 fi
 
 if [ $choice = 4 ]
