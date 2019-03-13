@@ -13,10 +13,10 @@ read k
 case $k in
 1) whoami;;
 2) free;;
-3) echo "!111";;
+3) grep MemTotal /proc/meminfo;;
 4) ps;;
-5) echo $(ps -u);;
-6) echo "22";;
-7) echo "ww";;
+5) ps -u;;
+6) date -R;;
+7) uptime -s;;
 esac
 done
