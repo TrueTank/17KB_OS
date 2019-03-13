@@ -35,7 +35,7 @@ then date -u
 fi
 
 if [ $choice = 7 ]
-then uptime
+then uptime -s
 fi
 
 read choice
