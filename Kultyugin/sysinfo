@@ -23,8 +23,8 @@ case "$param" in
 1 ) echo $user;;
 2 ) free --total;;
 3 ) df --total;;
-4 ) top;;
-5 ) top -u $user;;
+4 ) ps -a;;
+5 ) ps -u $user;;
 6 ) date;;
 7 ) uptime;;
 8 ) break;;
