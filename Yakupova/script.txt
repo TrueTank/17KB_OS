@@ -1,0 +1,43 @@
+echo "1 - current user"
+echo "2 - amount of free and used memory"
+echo "3 - system disk space usage"
+echo "4 - current processes"
+echo "5 - processes started bu current user"
+echo "6 - system date and time"
+echo "7 - system startup time"
+echo "8 - exit"
+read choice
+while [ $choice != 8 ]
+do
+
+if [ $choice = 1 ]
+then whoami
+fi
+
+if [ $choice = 2 ]
+then free -m
+fi
+
+if [ $choice = 3 ]
+then df -h
+fi
+
+if [ $choice = 4 ]
+then ps
+fi
+
+if [ $choice = 5 ]
+then ps -u
+fi
+
+if [ $choice = 6 ]
+then date -u
+fi
+
+if [ $choice = 7 ]
+then uptime -s
+fi
+
+read choice
+done
+exit 0
