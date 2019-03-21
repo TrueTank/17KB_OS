@@ -11,4 +11,13 @@ echo --------------------------------
 echo Proccesses 
 ps -a
 echo --------------------------------
+echo Proccesses of user
+os -u
+echo --------------------------------
+echo Date is
+date
+echo --------------------------------
+echo Time of working
+uptime
+echo --------------------------------
 sleep 5s
