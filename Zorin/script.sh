@@ -2,13 +2,13 @@
 
 echo 'Please enter your choice: '
 options=("Current user"
-		 "Amount of used memory"
-		 "Amount of disk space"
-		 "Running processes"
-		 "Processes, running current users"
-		 "System date and time"
-		 "System startup time"
-		 "Exit");
+	 "Amount of used memory"
+	 "Amount of disk space"
+	 "Running processes"
+	 "Processes, running current users"
+	 "System date and time"
+	 "System startup time"
+	 "Exit");
 select opt in "${options[@]}"
 do
    case $opt in  
