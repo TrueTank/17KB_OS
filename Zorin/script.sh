@@ -22,3 +22,7 @@ do
    "Exit") exit;;
    esac
 done
+# Information sources:https://ru.wikipedia.org/wiki/Ps
+# https://habr.com/ru/company/ruvds/blog/325522/
+# https://askubuntu.com/questions/1705/how-can-i-create-a-select-menu-in-a-shell-script
+# https://habr.com/ru/post/267825/
