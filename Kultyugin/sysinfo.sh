@@ -4,8 +4,8 @@ while [ $param -ne 8 ]
 do
 
 echo
-echo "----------------Here you can get some information about this system----------------"
-echo "--Choose command you need to execute by putting appropriate digit in a line below--"
+echo "--------------Here you can get some information about this system--------------"
+echo "Choose command you need to execute by putting appropriate digit in a line below"
 echo
 for var in " - 1)current user" " - 2)memory in use" " - 3)disk space" " - 4)running tasks" " - 5)tasks run 
 by user" " - 6)system date and time" " - 7)boot time" " - 8)exit"
