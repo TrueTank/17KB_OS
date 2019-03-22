@@ -21,3 +21,4 @@ echo Time of working
 uptime
 echo --------------------------------
 sleep 5s
+exit 0
