@@ -4,7 +4,7 @@ do
 echo Svar;
 case "Svar" in
 "Current user") whoami;;
-"Amount of memory used") free;; 
+"Amount of memory used") free -m;; 
 "Disk space") df -k;; 
 "Running processes") ps -e;; 
 "Running processes by the current user") ps -u;;
