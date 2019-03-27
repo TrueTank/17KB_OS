@@ -19,6 +19,6 @@ select menu in "${MENU[@]}" ; do
 		6) date -u ;;
 		7) uptime ;;
 		8) break ;;
-		*) echo "Try choice again"
+		*) echo "Repeat the selection again"
 	esac
 done
