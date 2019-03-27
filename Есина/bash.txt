@@ -13,5 +13,15 @@ echo "7 - get time"
 echo "8 - exit"
 echo "---"
 
-
+read number
+echo "----------"
+case "$numbr" in
+1 ) whoami;;
+2 ) free —total;;
+3 ) df —total;;
+4 ) ps -a;;
+5 ) ps -u;;
+6 ) date;;
+7 ) uptime;;
+esac
 done
