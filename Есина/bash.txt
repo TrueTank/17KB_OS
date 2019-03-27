@@ -12,4 +12,6 @@ echo "6 - get date"
 echo "7 - get time"
 echo "8 - exit"
 echo "---"
+
+
 done
