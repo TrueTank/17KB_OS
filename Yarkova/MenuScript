@@ -1,0 +1,22 @@
+echo "Menu"
+echo "1-Current user"
+echo "2-Amount of memory used"
+echo "3-Disk space"
+echo "4-Running processes"
+echo "5-Processes running by the current user"
+echo "6-System date and time"
+echo "7-System startup time"
+echo "8-EXIT"
+while [[ $k -ne 8 ]]
+do
+read k
+case $k in
+1) whoami;;
+2) free;;
+3) grep MemTotal /proc/meminfo;;
+4) ps;;
+5) ps -u;;
+6) date -R;;
+7) uptime -s;;
+esac
+done
