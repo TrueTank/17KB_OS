@@ -1,6 +1,6 @@
 #!/bin/sh
 number=0
-while [ $number -ne 9 ]
+while [ $number -ne 8 ]
 do
 echo "---"
 echo "1 - get username"
@@ -15,7 +15,7 @@ echo "---"
 
 read number
 echo "----------"
-case "$numbr" in
+case "$number" in
 1 ) whoami;;
 2 ) free —total;;
 3 ) df —total;;
